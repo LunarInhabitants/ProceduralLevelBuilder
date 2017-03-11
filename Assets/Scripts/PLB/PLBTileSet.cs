@@ -18,6 +18,12 @@ public class PLBTileSet : ScriptableObject
         public float biasToSpawn = 1.0f;
     }
 
+    /// <summary>
+    /// A list of tiles that can be used for the initial tile.
+    /// If this is empty, a random tile will be chosen from the main tile list instead.
+    /// </summary>
+    public List<PLBTile> initialTiles = new List<PLBTile>();
+
     /// <summary>The tile entries in this tileset</summary>
     public List<PLBTileSetEntry> tiles = new List<PLBTileSetEntry>();
 }
